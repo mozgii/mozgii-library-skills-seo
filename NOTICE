@@ -1,0 +1,37 @@
+SEO skills
+Copyright 2026 MOZGII, Inc. (https://mozgii.com/)
+
+Every text in this library is written by MOZGII. The sources below were read as context for facts; nothing was copied from them.
+
+- Google LLC, https://github.com/google/skills at ed65d8a24b0e3e79665962978d98e30a0f8da0eb, Apache-2.0
+- Google LLC, https://github.com/GoogleChrome/modern-web-guidance at 4f2b13e25c5815b3f080ca0d983e828d96561a0f, Apache-2.0
+- Google LLC, https://github.com/ChromeDevTools/chrome-devtools-mcp at 8d009e854f8aa55b1ec31628e836d4d4731b8ec8, Apache-2.0
+- Cloudflare, Inc., https://github.com/cloudflare/skills at ed2d6ba89033ba8015591005ed9382cef550417f, Apache-2.0
+- Anthropic PBC, https://github.com/anthropics/knowledge-work-plugins at 2574e29377c7173d0cecffef29a6ecbd7f8ccb5d, Apache-2.0
+- Semrush Inc., https://github.com/semrush/skills at 019ab369403c0e816707edae6194fa3bb47dfcd0, Apache-2.0
+- Ahrefs Pte. Ltd., https://github.com/ahrefs/ahrefs-api-skills at 7e777771deefe378d3e0967c4ccd8b41dd07920c, Apache-2.0
+- Microsoft Corporation, https://github.com/microsoft/power-platform-skills at ad5576ff64c69ce0727027cad1a6f20d095277c0, MIT
+- Yandex LLC, https://github.com/yandex/kit-skills at b009bef18ef12afec826cb2fda089bcf8b7a79c9, MIT
+- agricidaniel, https://github.com/AgriciDaniel/claude-seo at 6be93f45064ffbadced572b5d5c95f55fd263af0, MIT
+- Corey Haines, https://github.com/coreyhaines31/marketingskills at 88c79f6528a9347420e57ceb1fff9a60de651768, MIT
+- RampStack Co., https://github.com/rampstackco/claude-skills at 9b90db257f7395fab76ff9bfcb808456709f6af3, MIT
+- SEOmator, https://github.com/seo-skills/seo-audit-skill at fac4b75f2059b6d74bb05a865fe1b0ca5de3ba66, MIT
+
+Documentation read for facts, each under its publisher's terms; linked, nothing copied. Read on 31 October 2026:
+
+- Google LLC, Search Central blog post on the shared training token, https://developers.google.com/search/blog/2026/10/ai-training-control
+- Google LLC, Business Profile Help, https://support.google.com/business/answer/9157481
+- Google LLC, structured data documentation, https://developers.google.com/search/docs/appearance/structured-data/merchant-listing and the pages beside it
+- Google LLC, Search Central blog post on the site reputation policy, https://developers.google.com/search/blog/2026/08/update-site-reputation-policy
+- Google LLC, Search Console Help on the Search generative AI control, https://support.google.com/webmasters/answer/16908024
+- Yandex LLC, Webmaster help on Clean-param and rel=canonical, https://yandex.com/support/webmaster/robot-workings/clean-param.html
+- Yandex LLC, Wordstat in the Search API, https://aistudio.yandex.ru/docs/en/search-api/concepts/wordstat, and the Wordstat API, https://yandex.com/support2/wordstat/en/content/api-wordstat
+- Library of Congress, ISO 639-2 code list, https://www.loc.gov/standards/iso639-2/php/code_list.php
+- Microsoft Corporation, Bing Webmaster Tools help, https://www.bing.com/webmasters/help/help-center-661b2d18, and the Bing blogs, https://blogs.bing.com/
+- Microsoft Corporation, Bing Webmaster API, https://learn.microsoft.com/en-us/bingwebmaster/
+- NAVER Corp., Search Advisor guides, https://searchadvisor.naver.com/guide, and the NAVER Search & Tech blog, https://m.blog.naver.com/naver_search
+- Baidu, Inc., Search Resource Platform, https://ziyuan.baidu.com/
+- IndexNow, https://www.indexnow.org/documentation and https://www.indexnow.org/searchengines.json
+- Duck Duck Go, Inc., https://duckduckgo.com/duckduckgo-help-pages/results/sources
+- StatCounter, https://gs.statcounter.com/search-engine-market-share, and InternetTrend (BizSpring Inc.), http://www.internettrend.co.kr/trendForward.tsp
+- Secondary sources: https://www.searchenginejournal.com/, https://www.seroundtable.com/, https://help.aliyun.com/en/dws/icp-filing

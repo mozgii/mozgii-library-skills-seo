@@ -1,0 +1,469 @@
+{
+  "sources": [
+    {
+      "from": "https://github.com/google/skills/tree/ed65d8a24b0e3e79665962978d98e30a0f8da0eb/skills",
+      "commit": "ed65d8a24b0e3e79665962978d98e30a0f8da0eb",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [
+        "docs/v2026/common/seo-measurement/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/GoogleChrome/modern-web-guidance/tree/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance",
+      "commit": "4f2b13e25c5815b3f080ca0d983e828d96561a0f",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [
+        "docs/v2026/common/core-web-vitals/references/cwv-fixes.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/ChromeDevTools/chrome-devtools-mcp/tree/8d009e854f8aa55b1ec31628e836d4d4731b8ec8/skills/debug-optimize-lcp",
+      "commit": "8d009e854f8aa55b1ec31628e836d4d4731b8ec8",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [
+        "docs/v2026/common/core-web-vitals/SKILL.md",
+        "docs/v2026/common/core-web-vitals/references/cwv-fixes.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/cloudflare/skills/tree/ed2d6ba89033ba8015591005ed9382cef550417f/skills/web-perf",
+      "commit": "ed2d6ba89033ba8015591005ed9382cef550417f",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [
+        "docs/v2026/common/core-web-vitals/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/anthropics/knowledge-work-plugins/tree/2574e29377c7173d0cecffef29a6ecbd7f8ccb5d/small-business/skills/seo-ai-visibility",
+      "commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [
+        "docs/v2026/common/ai-search-visibility/SKILL.md",
+        "docs/v2026/site-types/ecommerce-seo/SKILL.md",
+        "docs/v2026/google/google-ai-features/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/anthropics/knowledge-work-plugins/tree/2574e29377c7173d0cecffef29a6ecbd7f8ccb5d/marketing/skills/seo-audit",
+      "commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [
+        "docs/v2026/common/seo-audit/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/semrush/skills/tree/019ab369403c0e816707edae6194fa3bb47dfcd0",
+      "commit": "019ab369403c0e816707edae6194fa3bb47dfcd0",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [
+        "docs/v2026/common/seo-audit/SKILL.md",
+        "docs/v2026/common/structured-data/SKILL.md",
+        "docs/v2026/common/keyword-research/SKILL.md",
+        "docs/v2026/common/link-building/SKILL.md",
+        "docs/v2026/google/google-rich-results/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/ahrefs/ahrefs-api-skills/tree/7e777771deefe378d3e0967c4ccd8b41dd07920c/skills/ahrefs-python",
+      "commit": "7e777771deefe378d3e0967c4ccd8b41dd07920c",
+      "license": "Apache-2.0",
+      "read": "2026-10-30",
+      "informed": [],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/microsoft/power-platform-skills/tree/ad5576ff64c69ce0727027cad1a6f20d095277c0/plugins/power-pages/skills/add-seo",
+      "commit": "ad5576ff64c69ce0727027cad1a6f20d095277c0",
+      "license": "MIT",
+      "read": "2026-10-30",
+      "informed": [],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/yandex/kit-skills/tree/b009bef18ef12afec826cb2fda089bcf8b7a79c9/skills/kit-store-checkup",
+      "commit": "b009bef18ef12afec826cb2fda089bcf8b7a79c9",
+      "license": "MIT",
+      "read": "2026-10-30",
+      "informed": [],
+      "copied": false
+    },
+    {
+      "from": "https://github.com/AgriciDaniel/claude-seo/tree/6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "license": "MIT",
+      "read": "2026-10-31",
+      "informed": [],
+      "copied": false,
+      "note": "reviewed for coverage only and no text was taken; the first review kept no commit, so this is the commit read for the overlap check"
+    },
+    {
+      "from": "https://github.com/coreyhaines31/marketingskills/tree/88c79f6528a9347420e57ceb1fff9a60de651768",
+      "commit": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "license": "MIT",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/common/link-building/SKILL.md"
+      ],
+      "copied": false,
+      "note": "reviewed for coverage only and no text was taken; the first review kept no commit, so this is the commit read for the overlap check"
+    },
+    {
+      "from": "https://github.com/rampstackco/claude-skills/tree/9b90db257f7395fab76ff9bfcb808456709f6af3",
+      "commit": "9b90db257f7395fab76ff9bfcb808456709f6af3",
+      "license": "MIT",
+      "read": "2026-10-31",
+      "informed": [],
+      "copied": false,
+      "note": "reviewed for coverage only and no text was taken; the first review kept no commit, so this is the commit read for the overlap check"
+    },
+    {
+      "from": "https://github.com/seo-skills/seo-audit-skill/tree/fac4b75f2059b6d74bb05a865fe1b0ca5de3ba66",
+      "commit": "fac4b75f2059b6d74bb05a865fe1b0ca5de3ba66",
+      "license": "MIT",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/common/seo-audit/SKILL.md"
+      ],
+      "copied": false,
+      "note": "reviewed for coverage only and no text was taken; the first review kept no commit, so this is the commit read for the overlap check"
+    },
+    {
+      "from": "https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a",
+      "commit": "",
+      "license": "Microsoft terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md"
+      ],
+      "copied": false,
+      "note": "page renders only with JavaScript; read in a headless browser. It shows no date; the February 2026 date comes from Search Engine Roundtable and Search Engine Journal"
+    },
+    {
+      "from": "https://www.bing.com/webmasters/help/new-ai-pref-2t1cc16d",
+      "commit": "",
+      "license": "Microsoft terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-ai-and-copilot/references/ai-preferences.md",
+        "docs/v2026/common/ai-search-visibility/SKILL.md",
+        "docs/v2026/bing/bing-ai-and-copilot/SKILL.md"
+      ],
+      "copied": false,
+      "note": "FAQ on the AI preferences; read in a headless browser"
+    },
+    {
+      "from": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+      "commit": "",
+      "license": "Microsoft terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-ai-and-copilot/references/ai-preferences.md",
+        "docs/v2026/common/ai-search-visibility/SKILL.md",
+        "docs/v2026/bing/bing-ai-and-copilot/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://www.bing.com/webmasters/help/ai-performance-9f8e7d6c",
+      "commit": "",
+      "license": "Microsoft terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-ai-and-copilot/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://www.bing.com/webmasters/help/url-submission-62f2860b",
+      "commit": "",
+      "license": "Microsoft terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md",
+        "docs/v2026/bing/bing-webmaster-tools/references/webmaster-api.md",
+        "docs/v2026/bing/bing-webmaster-tools/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://www.bing.com/webmasters/help/help-center-661b2d18",
+      "commit": "",
+      "license": "Microsoft terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md",
+        "docs/v2026/bing/bing-webmaster-tools/SKILL.md"
+      ],
+      "copied": false,
+      "note": "help pages read: Add and verify, Search Performance, URL Inspection, Sitemaps, IndexNow, Site Scan, Recommendations, Crawl control, Block URLs, Verify Bingbot, Which crawlers, Why not in the index, Robots meta tags, Structured data, Content removal, Permanent removal, Keyword Research"
+    },
+    {
+      "from": "https://www.bing.com/webmasters/help/soap-pox-api-retirement-s0appox01",
+      "commit": "",
+      "license": "Microsoft terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-webmaster-tools/references/webmaster-api.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://learn.microsoft.com/en-us/bingwebmaster/",
+      "commit": "",
+      "license": "Microsoft Learn terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-webmaster-tools/references/webmaster-api.md",
+        "docs/v2026/bing/bing-webmaster-tools/scripts/bing_api.py",
+        "docs/v2026/bing/bing-webmaster-tools/SKILL.md"
+      ],
+      "copied": false,
+      "note": "getting-access, oauth2, getting-started and the IWebmasterApi method pages"
+    },
+    {
+      "from": "https://www.indexnow.org/documentation",
+      "commit": "",
+      "license": "public protocol",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md",
+        "docs/v2026/naver/naver-search-advisor/SKILL.md"
+      ],
+      "copied": false,
+      "note": "documentation and FAQ"
+    },
+    {
+      "from": "https://duckduckgo.com/duckduckgo-help-pages/results/sources",
+      "commit": "",
+      "license": "DuckDuckGo terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://gs.statcounter.com/search-engine-market-share",
+      "commit": "",
+      "license": "StatCounter terms (figures quoted as facts with their date, linked)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md",
+        "docs/v2026/naver/naver-seo/SKILL.md",
+        "docs/v2026/site-types/international-seo/SKILL.md",
+        "docs/v2026/site-types/international-seo/references/china-baidu.md"
+      ],
+      "copied": false,
+      "note": "September 2026 figures: worldwide, United States, Japan, South Korea, Czech Republic, China, Russian Federation; third-party estimates"
+    },
+    {
+      "from": "https://searchadvisor.naver.com/sitemap.xml",
+      "commit": "",
+      "license": "Naver terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/naver/naver-seo/SKILL.md",
+        "docs/v2026/naver/naver-seo/references/structured-data.md",
+        "docs/v2026/naver/naver-search-advisor/references/crawl-api.md",
+        "docs/v2026/naver/naver-search-advisor/scripts/naver_check.py",
+        "docs/v2026/naver/naver-search-advisor/SKILL.md"
+      ],
+      "copied": false,
+      "note": "all 54 guide pages listed there, in Korean, read and written in English"
+    },
+    {
+      "from": "https://m.blog.naver.com/naver_search/220774795442",
+      "commit": "",
+      "license": "Naver terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/naver/naver-seo/SKILL.md"
+      ],
+      "copied": false,
+      "note": "Naver's C-Rank post, 29 July 2016; the blog's post list was read for AI Briefing mentions"
+    },
+    {
+      "from": "http://www.internettrend.co.kr/trendForward.tsp",
+      "commit": "",
+      "license": "InternetTrend (BizSpring) terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/naver/naver-seo/SKILL.md"
+      ],
+      "copied": false,
+      "note": "share of visits, 30 September to 29 October 2026; third-party estimate"
+    },
+    {
+      "from": "https://ziyuan.baidu.com/",
+      "commit": "",
+      "license": "Baidu terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/site-types/international-seo/references/china-baidu.md"
+      ],
+      "copied": false,
+      "note": "home, tool handbook (course 267), algorithm rules, low-quality pages, mobile white paper, SEO guide 2.0, and notices 3531, 3561 to 3568; the Search Mini Tools skill sits behind a login and was not read"
+    },
+    {
+      "from": "https://www.searchenginejournal.com/baidu-now-measures-ai-citations-heres-what-seos-should-and-shouldnt-read-into-it/",
+      "commit": "",
+      "license": "publisher terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/site-types/international-seo/references/china-baidu.md"
+      ],
+      "copied": false,
+      "note": "secondary source for Baidu AI Traffic Analysis"
+    },
+    {
+      "from": "https://www.searchenginejournal.com/bing-adds-geo-to-official-guidelines-expands-ai-abuse-definitions/568442",
+      "commit": "",
+      "license": "publisher terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md"
+      ],
+      "copied": false,
+      "note": "secondary source for the date of the guidelines rewrite, with https://www.seroundtable.com/bing-webmaster-guidelines-updated-41002.html"
+    },
+    {
+      "from": "https://help.aliyun.com/en/dws/icp-filing",
+      "commit": "",
+      "license": "vendor terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/site-types/international-seo/references/china-baidu.md"
+      ],
+      "copied": false,
+      "note": "third-party view of ICP filing, read with appinchina.co, fdichina.com, mondaq.com and eusmecentre.org.cn articles found by search"
+    },
+    {
+      "from": "https://developers.google.com/search/blog/2026/10/ai-training-control",
+      "commit": "",
+      "license": "CC BY 4.0",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-ai-and-copilot/references/ai-preferences.md",
+        "docs/v2026/common/ai-search-visibility/SKILL.md",
+        "docs/v2026/common/crawling-and-indexing/references/robots-txt.md",
+        "docs/v2026/bing/bing-ai-and-copilot/SKILL.md",
+        "docs/v2026/google/google-ai-features/SKILL.md"
+      ],
+      "copied": false,
+      "note": "with https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers for early 2027"
+    },
+    {
+      "from": "https://aistudio.yandex.ru/docs/en/search-api/concepts/wordstat",
+      "commit": "",
+      "license": "Yandex terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/yandex/yandex-wordstat/references/wordstat.md",
+        "docs/v2026/yandex/yandex-wordstat/SKILL.md"
+      ],
+      "copied": false,
+      "note": "with its pricing, limits, how-to and API reference pages"
+    },
+    {
+      "from": "https://yandex.com/support2/wordstat/en/content/api-wordstat",
+      "commit": "",
+      "license": "Yandex terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/yandex/yandex-wordstat/references/wordstat.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://support.google.com/business/answer/9157481",
+      "commit": "",
+      "license": "Google terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/site-types/local-seo/SKILL.md"
+      ],
+      "copied": false,
+      "note": "with the Business Profile guidelines, https://support.google.com/business/answer/3038177"
+    },
+    {
+      "from": "https://www.loc.gov/standards/iso639-2/php/code_list.php",
+      "commit": "",
+      "license": "public standard list",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/site-types/international-seo/SKILL.md",
+        "docs/v2026/site-types/international-seo/scripts/hreflang_check.py"
+      ],
+      "copied": false,
+      "note": "ISO 639-1 codes kr and se"
+    },
+    {
+      "from": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing",
+      "commit": "",
+      "license": "CC BY 4.0",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/google/google-rich-results/SKILL.md",
+        "docs/v2026/common/structured-data/SKILL.md"
+      ],
+      "copied": false,
+      "note": "with the product, product-snippet, return-policy, intro-structured-data and generate-structured-data-with-javascript pages beside it"
+    },
+    {
+      "from": "https://developers.google.com/search/blog/2026/08/update-site-reputation-policy",
+      "commit": "",
+      "license": "CC BY 4.0",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/google/algorithm-updates-and-penalties/SKILL.md",
+        "docs/v2026/google/algorithm-updates-and-penalties/references/spam-policies.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://support.google.com/webmasters/answer/16908024",
+      "commit": "",
+      "license": "Google terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/google/google-ai-features/SKILL.md"
+      ],
+      "copied": false
+    },
+    {
+      "from": "https://yandex.com/support/webmaster/robot-workings/clean-param.html",
+      "commit": "",
+      "license": "Yandex terms (linked, not copied)",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/yandex/yandex-seo/SKILL.md"
+      ],
+      "copied": false,
+      "note": "with https://yandex.com/support/webmaster/robot-workings/canonical.html"
+    },
+    {
+      "from": "https://www.indexnow.org/searchengines.json",
+      "commit": "",
+      "license": "public protocol",
+      "read": "2026-10-31",
+      "informed": [
+        "docs/v2026/bing/bing-seo/SKILL.md"
+      ],
+      "copied": false
+    }
+  ]
+}

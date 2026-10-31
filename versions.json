@@ -1,0 +1,174 @@
+{
+  "packages": [
+    {
+      "name": "web-vitals",
+      "ecosystem": "npm",
+      "version": "6.2.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "lighthouse",
+      "ecosystem": "npm",
+      "version": "13.6.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "unlighthouse",
+      "ecosystem": "npm",
+      "version": "0.19.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "chrome-devtools-mcp",
+      "ecosystem": "npm",
+      "version": "1.12.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "next",
+      "ecosystem": "npm",
+      "version": "16.4.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "nuxt",
+      "ecosystem": "npm",
+      "version": "4.6.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "astro",
+      "ecosystem": "npm",
+      "version": "7.4.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "@astrojs/sitemap",
+      "ecosystem": "npm",
+      "version": "3.7.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "@sveltejs/kit",
+      "ecosystem": "npm",
+      "version": "3.1.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "svelte",
+      "ecosystem": "npm",
+      "version": "5.57.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "react-router",
+      "ecosystem": "npm",
+      "version": "8.5.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "schemaorg/schemaorg",
+      "ecosystem": "github",
+      "version": "30.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "google/robotstxt",
+      "ecosystem": "github",
+      "version": "1.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "nodejs/node",
+      "ecosystem": "github",
+      "version": "26.13.0",
+      "checked": "2026-10-30"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Python",
+      "version": "3.15.2",
+      "source": "https://www.python.org/downloads/",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "Google Cloud CLI",
+      "version": "591.0.0",
+      "source": "https://docs.cloud.google.com/sdk/docs/release-notes",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "Screaming Frog SEO Spider",
+      "version": "24.3",
+      "source": "https://www.screamingfrog.co.uk/seo-spider/release-history/",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "Sitebulb",
+      "version": "not found",
+      "source": "no public version page could be read on this date",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "Search Analytics API (Search Console)",
+      "version": "webmasters/v3",
+      "source": "https://developers.google.com/webmaster-tools/v1/searchanalytics/query",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "URL Inspection API",
+      "version": "v1",
+      "source": "https://developers.google.com/webmaster-tools/v1/urlInspection.index/inspect",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "PageSpeed Insights API",
+      "version": "v5",
+      "source": "https://developers.google.com/speed/docs/insights/v5/get-started",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "CrUX API",
+      "version": "v1",
+      "source": "https://developer.chrome.com/docs/crux/api",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "Google Analytics Data API",
+      "version": "v1beta",
+      "source": "https://developers.google.com/analytics/devguides/reporting/data/v1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "Indexing API",
+      "version": "v3",
+      "source": "https://developers.google.com/search/apis/indexing-api/v3/quickstart",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "Bing Webmaster API",
+      "version": "JSON (REST); SOAP and POX retired 2026-08-31",
+      "source": "https://www.bing.com/webmasters/help/soap-pox-api-retirement-s0appox01",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "IndexNow protocol",
+      "version": "documentation as published, undated",
+      "source": "https://www.indexnow.org/documentation",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "Naver Search Advisor crawl request API",
+      "version": "submit.json and verify.json, unversioned",
+      "source": "https://searchadvisor.naver.com/guide/crawl-request-api",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "Baidu URL push API",
+      "version": "handbook chapter dated up to 2020-08-14",
+      "source": "https://ziyuan.baidu.com/college/courseinfo?id=267&page=2",
+      "checked": "2026-10-31"
+    }
+  ]
+}
