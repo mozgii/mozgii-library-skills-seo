@@ -12,7 +12,8 @@
 // Levels with frequency data: strong = exact ≥ 20 (or exact ≥ 5 and a top-3 suggestion); some = exact ≥ 5, or exact ≥ 1
 // and suggested; weak = broad only, or suggested with exact 0; none. Without frequency data (--no-bukvarix or an
 // error) suggestions alone decide: top-3 = some, suggested = weak. A suggestion is wording evidence, not volume.
-// Bukvarix answers over http only and returns 429 after ~30 fast requests; the script waits and retries,
+// Every request uses https, and a redirect to anything else is refused before it is followed, so a phrase never
+// crosses the network in the clear. Bukvarix returns 429 after ~30 fast requests; the script waits and retries,
 // sleeps between calls, and caches answers for 30 days so reruns do not hit the service again.
 import fs from "node:fs";
 import path from "node:path";
@@ -84,12 +85,24 @@ const saveCache = () => {
   fs.writeFileSync(opts.cache, JSON.stringify(cache, null, 1));
 };
 
+const MAX_REDIRECTS = 5;
+const REFUSED = -1; // Not 0: a refusal is final, and callers retry a 0.
+
 async function get(url) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), 45000);
   try {
-    const res = await fetch(url, { signal: ctrl.signal, headers: { "user-agent": "Mozilla/5.0 (seo demand check)" } });
-    return { status: res.status, body: await res.text() };
+    let target = new URL(url);
+    for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+      if (target.protocol !== "https:") return { status: REFUSED, error: `refused a non-https address: ${target.protocol}//${target.host}` };
+      // Redirects are followed by hand: fetch's own "follow" would send the phrase before the address could be checked.
+      const res = await fetch(target, { signal: ctrl.signal, redirect: "manual", headers: { "user-agent": "Mozilla/5.0 (seo demand check)" } });
+      const location = res.headers.get("location");
+      if (res.status < 300 || res.status >= 400 || !location) return { status: res.status, body: await res.text() };
+      await res.body?.cancel();
+      target = new URL(location, target);
+    }
+    return { status: REFUSED, error: "too many redirects" };
   } catch (e) {
     return { status: 0, error: e.name === "AbortError" ? "timeout" : e.message };
   } finally {
@@ -120,7 +133,7 @@ async function frequency(phrase) {
   const hit = cache[key];
   if (hit && Date.now() - Date.parse(hit.date) < 30 * 864e5) return hit;
   for (let attempt = 0; ; attempt++) {
-    const r = await get(`http://api.bukvarix.com/v1/keywords/?q=${encodeURIComponent(phrase)}&api_key=free&format=tsv&num=100`);
+    const r = await get(`https://api.bukvarix.com/v1/keywords/?q=${encodeURIComponent(phrase)}&api_key=free&format=tsv&num=100`);
     // 429 = burst limit (clears within a minute); 0 = timeout or network error on a heavy phrase.
     if ((r.status === 429 || r.status === 0) && attempt < 3) {
       await sleep(r.status === 429 ? 30000 : 5000);

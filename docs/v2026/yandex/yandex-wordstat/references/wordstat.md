@@ -46,10 +46,12 @@ Yandex demand sources estimate monthly query frequency; exact frequency decides.
 | Wordstat web (wordstat.yandex.ru) | Yandex ID, by hand | broad and operator-filtered monthly frequency, regions, devices, dynamics | manual; the reference number for decisions |
 | Wordstat API (`https://api.wordstat.yandex.net`) | Yandex OAuth token, then a connection request to Yandex Direct support with your login and `ClientId` | the same data as the new Wordstat: frequency, top and similar queries, dynamics, regions, devices | a personal quota per second and per day (429), and a total quota on the whole API (503) |
 | Yandex Search API: Wordstat methods | a service account with an API key, billed per 1,000 requests | top queries, dynamics, regional distribution | quotas; see "Wordstat through the Yandex Search API" |
-| Bukvarix free API | `api_key=free`, http only, no login | a copy of Wordstat: broad and exact frequency, all regions combined | 429 after about 30 fast requests; snapshot date not stated; regions not split |
+| Bukvarix free API (`https://api.bukvarix.com`) | `api_key=free`, a key shared by everyone, no login | a copy of Wordstat: broad and exact frequency, all regions combined | 429 after about 30 fast requests; snapshot date not stated; regions not split |
 | Key Collector and paid suites | licence plus Yandex accounts | bulk Wordstat collection by region | paid, manual setup |
 
-`scripts/demand.mjs` uses the Bukvarix copy plus Yandex suggestions with a 30-day cache and 429 backoff. Bukvarix TSV
+`scripts/demand.mjs` uses the Bukvarix copy plus Yandex suggestions with a 30-day cache and 429 backoff. It sends every
+request over https and refuses a redirect to anything else, so nobody on the network can read a phrase; Bukvarix and
+Yandex still receive each phrase they answer, so keep unannounced product names out of it. Bukvarix TSV
 columns: phrase, words, characters, broad frequency, exact frequency. A phrase may be stored in another form or
 order; the script matches by content words before reporting zero, and shows the stored form in the `as` column.
 

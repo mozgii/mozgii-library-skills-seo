@@ -80,7 +80,9 @@ Roles, every method, prices and quotas: [references/wordstat.md](references/word
 ## Demand script without a login
 
 The demand script looks up broad and exact frequency through a free Wordstat copy and adds Yandex suggestions, with
-caching and backoff:
+caching and backoff. Each request goes over https, and the script refuses a redirect to any other scheme, so a phrase
+never crosses the network in the clear. Bukvarix and Yandex still receive every phrase they answer, so leave
+unannounced product names out:
 
 ```bash
 node scripts/demand.mjs "ремонт квартир под ключ" "ремонт квартиры цена"
@@ -124,6 +126,17 @@ curl -s -X POST https://searchapi.api.cloud.yandex.net/v2/wordstat/topRequests \
 | python3 -c "import json,sys; r=json.load(sys.stdin); print(r['totalCount'], len(r['results']))"
 ```
 
+A fake `fetch` proves the demand script's redirect refusal with no network: it answers every request with a redirect to
+each address below. It needs Node 20.6 or later for `--import`. Expect `refused` in the `error` column, exit code 1, and
+no `LEAK` line:
+
+```bash
+fake='data:text/javascript,globalThis.fetch=async(u)=>{if(new URL(u).protocol!=="https:")console.log("LEAK",String(u));return new Response(null,{status:302,headers:{location:process.env.TO}})}'
+for TO in http://example.com/ ftp://example.com/ HTTP://example.com/; do
+  TO="$TO" node --import "$fake" scripts/demand.mjs "проверка" --no-suggest --cache "$(mktemp -d)/c.json"
+done
+```
+
 1. Each number in the plan names its source, region and month.
 2. Exact frequency is below broad for the same phrase.
 3. The figure that decides a main phrase was read in Wordstat itself.
@@ -153,9 +166,12 @@ The gotchas below produce numbers that look right and are not.
    still matches all word forms. Fix: add `!` to every word.
 5. **A dropped preposition.** Symptom: the exact figure counts a different query. Cause: stop words were left out of the
    operators. Fix: put `!` on prepositions too.
-6. **A zero in the script for a real phrase.** Symptom: the phrase shows no demand, and the `as` column holds another form.
+6. **`refused a non-https address` in the error column.** Symptom: the phrase has no numbers and the script exits 1. Cause: the
+   service redirected to an address without https, and the script stops rather than send the phrase in the clear. Fix:
+   rerun later, or take the number from Wordstat web or the Search API; never change the script to follow it.
+7. **A zero in the script for a real phrase.** Symptom: the phrase shows no demand, and the `as` column holds another form.
    Cause: the copy stores it in another word form or order. Fix: read the `as` column before reporting zero.
-7. **Weekly dynamics refuse an operator.** Symptom: `GetDynamics` rejects a phrase or gives odd weekly data. Cause: weekly
+8. **Weekly dynamics refuse an operator.** Symptom: `GetDynamics` rejects a phrase or gives odd weekly data. Cause: weekly
    and monthly data accept only `+`, and every operator works only for daily data. Fix: use daily data for exact phrases.
 
 ## Anti-patterns in Wordstat
